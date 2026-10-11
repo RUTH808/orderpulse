@@ -1,0 +1,9 @@
+// Add each measure individually to fact_orders in Power BI Desktop.
+Orders = COUNTROWS(fact_orders)
+Eligible Deliveries = COUNTROWS(FILTER(fact_orders, NOT(ISBLANK(fact_orders[is_late]))))
+Late Deliveries = COUNTROWS(FILTER(fact_orders, fact_orders[is_late] = TRUE()))
+Late Delivery % = DIVIDE([Late Deliveries], [Eligible Deliveries])
+Merchandise BRL = SUM(fact_orders[merchandise_brl])
+Payments BRL = SUM(fact_orders[paid_brl])
+Canceled Orders = CALCULATE([Orders], fact_orders[order_status] = "canceled")
+Cancellation % = DIVIDE([Canceled Orders], [Orders])

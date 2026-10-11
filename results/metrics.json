@@ -1,0 +1,57 @@
+{
+  "dataset": "Olist public marketplace data",
+  "source_rows": {
+    "orders": 99441,
+    "items": 112650,
+    "payments": 103886,
+    "reviews": 99224,
+    "customers": 99441,
+    "products": 32951,
+    "sellers": 3095
+  },
+  "kpis": {
+    "orders": 99441.0,
+    "eligible_deliveries": 96470.0,
+    "late_deliveries": 6534.0,
+    "late_pct": 6.77,
+    "merchandise_brl": 13591643.7,
+    "payments_brl": 16008872.12,
+    "canceled_pct": 0.63
+  },
+  "build_seconds": 3.9829319569980726,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "source_manifest": {
+    "orders": {
+      "sha256": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+      "bytes": 17654914
+    },
+    "items": {
+      "sha256": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+      "bytes": 15438671
+    },
+    "payments": {
+      "sha256": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+      "bytes": 5777138
+    },
+    "reviews": {
+      "sha256": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+      "bytes": 14451670
+    },
+    "customers": {
+      "sha256": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+      "bytes": 9033957
+    },
+    "products": {
+      "sha256": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+      "bytes": 2379446
+    },
+    "sellers": {
+      "sha256": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+      "bytes": 174703
+    }
+  }
+}
